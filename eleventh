@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c;
+    char op;
+    
+    printf("Write the operands");
+    scanf("%d%d",&a,&b);
+
+    printf("Write the operator");
+    scanf(" %c",&op);
+    
+    switch(op)
+    {
+        case '+' : c=a+b;
+        printf("The addtion of a and b is %d",c);
+        break;
+
+        case '-' : c=a-b;
+        printf("The subtraction of a and b is %d",c);
+        break;
+
+        case '*' : c=a*b;
+        printf("The multiplication of a and b is %d",c);
+        break;
+        
+        case '/' : c=a/b;
+        printf("The Division of a with respect to b is %d",c);
+        break;
+
+        case '%' : c=a%b;
+        printf("The modulus of a with respect to b is %d",c);
+        break;
+
+        default:
+        printf("please choose the correct input");
+        break;
+    }
+    return 0;
+}
