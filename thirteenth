@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int i=1,mul=1,n;
+    printf("Write the number you want factorial of: ");
+    scanf("%d",&n);
+
+    for(i;i<=n;i=i+1)
+    {
+        mul=mul*i;
+    }
+    printf("%d! is %d",n,mul);
+    return 0;
+}
