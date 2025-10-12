@@ -1,18 +1,24 @@
 #include<stdio.h>
 int main()
 {
-  int a,b,c;
-  printf("enter any three numbers");
-  scanf("%d%d%d",a,b,c);
-  if(a>b&&a>c)
-    { 
-   printf("a=%d is the greatest ",a);
-  }
-  else if (b>c){
-    printf("b=%d is the greatest ",b);
-  }
-  else {
-    printf("c=%d is the greatest ",c);
-  }
-  return 0;
+    int a,b,c;
+    printf("write the three numbers in the sequel a,b,c");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a >= b && a >= c)
+    {
+        printf("a which is %d is the greatest number among all the three given numbers",a);
+    }
+    else if( b >= a && b >= c )
+    {
+        printf("b which is %d is the greatest number among all the three given numbers",b);
+    }
+    else if( c >= b && c >= a )
+    {
+        printf("c which is %d is the greatest number among all the three given numbers",c);
+    }
+    else
+    {
+        printf("all the three values are equal");
+    }
+    return 0;
 }
