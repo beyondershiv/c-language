@@ -1,15 +1,25 @@
 #include<stdio.h>
 int main()
 {
-int y;
-printf("Enter a year");
-scanf("%d",&y;
-
-if ((y%400==0)||(y%4==0&&y%100!=0))
-{
-printf("%d is a leap year",y);
-}else{
-printf("%d is not a leap year",y);
-}
-return 0;
+    int numA,numB,numC,numD,numE,percentage;
+    printf("write down the five subjects marks one by one.\n");
+    scanf("%d%d%d%d%d",&numA,&numB,&numC,&numD,&numE);
+    percentage=(numA+numB+numC+numD+numE)/5;
+    if(percentage>=90)
+    {
+        printf("Well done you have got a Solid 'A' with %d percent marks ",percentage);
+    }
+    else if(80>=percentage && percentage < 90)
+    {
+        printf("Nice! You have got 'B' with %d percent marks",percentage);
+    }
+    else if(70>=percentage && percentage < 80)
+    {
+        printf("You have got 'C' with %d percent marks",percentage);
+    }
+    else
+    {
+        printf("You have got 'D' with %d percent marks",percentage);
+    }
+    return 0;
 }
